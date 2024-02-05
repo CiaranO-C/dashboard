@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.sidebar {
+    grid-row: 1 / -1;
+    background-color: lightskyblue;
+    color: white;
+}
+
+.sidebar ul {
+    margin-bottom: 10px;
+}
+
+.header {
+    grid-column: 2 / -1;
+    background-color: white;
+}
+
+.content {
+    grid-row: 2 / -1;
+    grid-column: 2 / -1;
+    background-color: lightgray;
+}
