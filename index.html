@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="sidebar">
-        <h1>Dashboard</h1>
+        <div class="logo-container">
+            <span class="material-symbols-outlined">dashboard</span>
+            <h1>Dashboard</h1>
+        </div>
         <ul class="menu">
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
+            <li><span class="material-symbols-outlined">home</span>Home</li>
+            <li><span class="material-symbols-outlined">person</span>Profile</li>
+            <li><span class="material-symbols-outlined">mail</span>Messages</li>
+            <li><span class="material-symbols-outlined">history</span>History</li>
+            <li><span class="material-symbols-outlined">task_alt</span>Tasks</li>
+            <li><span class="material-symbols-outlined">groups</span>Communities</li>
         </ul>
         <ul class="settings">
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
+            <li><span class="material-symbols-outlined">settings</span>Settings</li>
+            <li><span class="material-symbols-outlined">support</span>Support</li>
+            <li><span class="material-symbols-outlined">lock</span>Privacy</li>
         </ul>
     </div>
 
     <div class="header">
-        <span class="material-symbols-outlined">search</span>
-        <input type="search">
+        <div class="search-bar">
+            <span class="material-symbols-outlined">search</span>
+            <input type="search">
+        </div>
 
-        <span class="material-symbols-outlined">notifications_active</span>
-        <img src="./photos/user-photo.jpg" alt="profile-pic" style="border-radius: 50%; max-height: 40px;">
-        <span>Ciaran O'Connell</span>
+        <div class="notifications">
+            <span class="material-symbols-outlined">notifications_active</span>
+            <img src="./photos/user-photo.jpg" alt="profile-pic" style="border-radius: 50%; max-height: 40px;">
+            <span>Ciaran O'Connell</span>
+        </div>
 
-        <img src="./photos/user-photo.jpg" alt="profile-pic" style="border-radius: 50%; max-height: 70px;">
-        <div>
-            <p>Hi there,</p>
-            <p>Ciaran O'Connell(@Ciaran)</p>
+        <div class="user">
+            <img src="./photos/user-photo.jpg" alt="profile-pic" style="border-radius: 50%; max-height: 50px;">
+            <div>
+                <p>Hi there,</p>
+                <p>Ciaran O'Connell(@Ciaran)</p>
+            </div>
         </div>
 
         <div class="header-buttons">
@@ -48,103 +63,132 @@
     </div>
 
     <div class="content">
-        <h3>Your Projects</h3>
+
+
         <div class="projects">
-            <div class="card">
-                <p>Project 1</p>
-                <p>This is some text about a project, fill it with something about the project, or dont.... up to you</p>
-                <div class="project-icons">
-                    <span class="material-symbols-outlined">favorite</span>
-                    <span class="material-symbols-outlined">bookmark</span>
-                    <span class="material-symbols-outlined">send</span>
+
+            <div class="card-container">
+                <h3 class="headers">Your Projects</h3>
+                <div class="card">
+                    <p>Project 1</p>
+                    <p>This is some text about a project, fill it with something about the project, or dont.... up to
+                        you
+                    </p>
+                    <div class="project-icons">
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span class="material-symbols-outlined">bookmark</span>
+                        <span class="material-symbols-outlined">send</span>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <p>Project 2</p>
-                <p>This is some text about a project, fill it with something about the project, or dont.... up to you</p>
-                <div class="project-icons">
-                    <span class="material-symbols-outlined">favorite</span>
-                    <span class="material-symbols-outlined">bookmark</span>
-                    <span class="material-symbols-outlined">send</span>
+                <div class="card">
+                    <p>Project 2</p>
+                    <p>This is some text about a project, fill it with something about the project, or dont.... up to
+                        you
+                    </p>
+                    <div class="project-icons">
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span class="material-symbols-outlined">bookmark</span>
+                        <span class="material-symbols-outlined">send</span>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <p>Project 3</p>
-                <p>This is some text about a project, fill it with something about the project, or dont.... up to you</p>
-                <div class="project-icons">
-                    <span class="material-symbols-outlined">favorite</span>
-                    <span class="material-symbols-outlined">bookmark</span>
-                    <span class="material-symbols-outlined">send</span>
+                <div class="card">
+                    <p>Project 3</p>
+                    <p>This is some text about a project, fill it with something about the project, or dont.... up to
+                        you
+                    </p>
+                    <div class="project-icons">
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span class="material-symbols-outlined">bookmark</span>
+                        <span class="material-symbols-outlined">send</span>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <p>Project 4</p>
-                <p>This is some text about a project, fill it with something about the project, or dont.... up to you</p>
-                <div class="project-icons">
-                    <span class="material-symbols-outlined">favorite</span>
-                    <span class="material-symbols-outlined">bookmark</span>
-                    <span class="material-symbols-outlined">send</span>
+                <div class="card">
+                    <p>Project 4</p>
+                    <p>This is some text about a project, fill it with something about the project, or dont.... up to
+                        you
+                    </p>
+                    <div class="project-icons">
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span class="material-symbols-outlined">bookmark</span>
+                        <span class="material-symbols-outlined">send</span>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <p>Project 5</p>
-                <p>This is some text about a project, fill it with something about the project, or dont.... up to you</p>
-                <div class="project-icons">
-                    <span class="material-symbols-outlined">favorite</span>
-                    <span class="material-symbols-outlined">bookmark</span>
-                    <span class="material-symbols-outlined">send</span>
+                <div class="card">
+                    <p>Project 5</p>
+                    <p>This is some text about a project, fill it with something about the project, or dont.... up to
+                        you
+                    </p>
+                    <div class="project-icons">
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span class="material-symbols-outlined">bookmark</span>
+                        <span class="material-symbols-outlined">send</span>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <p>Project 6</p>
-                <p>This is some text about a project, fill it with something about the project, or dont.... up to you</p>
-                <div class="project-icons">
-                    <span class="material-symbols-outlined">favorite</span>
-                    <span class="material-symbols-outlined">bookmark</span>
-                    <span class="material-symbols-outlined">send</span>
+                <div class="card">
+                    <p>Project 6</p>
+                    <p>This is some text about a project, fill it with something about the project, or dont.... up to
+                        you
+                    </p>
+                    <div class="project-icons">
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span class="material-symbols-outlined">bookmark</span>
+                        <span class="material-symbols-outlined">send</span>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <h3>Announcements</h3>
+
         <div class="announcements">
-            <div>
-                <p>Site Maintenance</p>
-                <p>This is some filler text that goes underneath each announcement heading</p>
-            </div>
-            <div>
-                <p>Community Content</p>
-                <p>This is some filler text that goes underneath each announcement heading</p>
-            </div>
-            <div>
-                <p>Updated Privacy Policy</p>
-                <p>This is some filler text that goes underneath each announcement heading</p>
+            <h3 class="headers">Announcements</h3>
+            <div class="announcements-container">
+                <div>
+                    <p>Site Maintenance</p>
+                    <p>This is some filler text that goes underneath each announcement heading</p>
+                </div>
+                <div>
+                    <p>Community Content</p>
+                    <p>This is some filler text that goes underneath each announcement heading</p>
+                </div>
+                <div>
+                    <p>Updated Privacy Policy</p>
+                    <p>This is some filler text that goes underneath each announcement heading</p>
+                </div>
             </div>
         </div>
 
-        <h3>Trending</h3>
+
         <div class="trending">
-            <div>
+            <h3 class="headers">Trending</h3>
+            <div class="trend-container">
+
                 <img src="./photos/user-photo.jpg" alt="id-photos" style="border-radius: 50%; height: 40px;">
-                <p>@SomeUser</p>
-                <p>Some users personal bio</p>
-            </div>
-            <div>
+                <div>
+                    <p>@SomeUser</p>
+                    <p>Some users personal bio</p>
+                </div>
+
                 <img src="./photos/user-photo.jpg" alt="id-photos" style="border-radius: 50%; height: 40px;">
-                <p>@SomeUser</p>
-                <p>Some users personal bio</p>
-            </div>
-            <div>
+                <div>
+                    <p>@SomeUser</p>
+                    <p>Some users personal bio</p>
+                </div>
+
                 <img src="./photos/user-photo.jpg" alt="id-photos" style="border-radius: 50%; height: 40px;">
-                <p>@SomeUser</p>
-                <p>Some users personal bio</p>
-            </div>
-            <div>
+                <div>
+                    <p>@SomeUser</p>
+                    <p>Some users personal bio</p>
+                </div>
+
                 <img src="./photos/user-photo.jpg" alt="id-photos" style="border-radius: 50%; height: 40px;">
-                <p>@SomeUser</p>
-                <p>Some users personal bio</p>
+                <div>
+                    <p>@SomeUser</p>
+                    <p>Some users personal bio</p>
+                </div>
+
             </div>
         </div>
     </div>
 </body>
+
 </html>
